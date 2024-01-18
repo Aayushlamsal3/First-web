@@ -3,29 +3,18 @@ import React from "react"
 const Common=(props)=>{
     return(
         <>
-        <section id="header" className="">
-            <div className="container-fluid nav_bg">
-                <div className="row">
-                    <div className="col-10 mx-auto">
-                        <div className="row">
-                            <div className="col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex-column">
-                                <h1>Grow your Bussiness with <strong className="aayush">Aayush {props.btn}</strong></h1>
-                                <h4 className="my-3">
-                                    We are the Team of Talented developer making Websites
-                                </h4>
-                                <div className="mt-3">
-                                <button type="button" class="btn btn-primary btn-lg">Get Started</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div className="container col-6 ">
+            <div className="container">
+            <h1>Welcome to {props.main} Page Guys!</h1>
+        <p>We are the Team of Developers making innovative websites from NEPAL.</p>
+
             </div>
-
-        </section>
-
+            <div className="container mt-2 ani">
+                <img src={props.img} className="rotating-image" alt="" style={{ maxWidth: "100%", height: "auto"  }} />
+            </div>
+            <button className="btn btn-primary mt-4">Get Started</button>
+        </div>
         </>
     )
 }
-
 export default Common;
