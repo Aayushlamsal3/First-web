@@ -1,10 +1,11 @@
 import React from "react"
 import Common from "./Common";
+import web from "./Images/web.jpg"
 
 const About=()=>{
     return(
         <>
-        <Common btn="ABOUT"/>
+       <Common main="About" img={web} />
         </>
     )
 }
