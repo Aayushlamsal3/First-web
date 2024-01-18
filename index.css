@@ -13,9 +13,22 @@
     font-weight: bold;
 }
 
-.Services{
-    color: rgb(52, 70, 203);
-    font-weight: bold;
+.services{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.rotating-image {
+    animation: tilt 0.3s;
+  }
+  
+  @keyframes tilt {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
 }
 
 .nav-item:hover{
