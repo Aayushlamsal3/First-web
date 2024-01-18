@@ -1,10 +1,13 @@
 import React from "react"
+import Common from "./Common";
+import Com from "./Images/Computer.jpg"
 
 const Home=()=>{
     return(
         <>
-        <p>This is Home Page</p>
+        <Common main="Home" img={Com} />
         </>
     )
 }
 export default Home;
+
